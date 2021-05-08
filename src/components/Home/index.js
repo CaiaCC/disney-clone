@@ -5,7 +5,7 @@ import { Container } from './StyledHomeElements';
 const HOME = () => {
     return (
         <Container>
-            Home
+            <ImgSlider />
         </Container>
     )
 }
