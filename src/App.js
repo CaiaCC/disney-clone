@@ -1,8 +1,7 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-import Login from './components/Login';
-
 import './App.css';
+import Login from './components/Login';
 
 const App = () => {
     return (
@@ -10,7 +9,7 @@ const App = () => {
             <Router>
                 <Switch>
                     <Route exact path='/'>
-                        <Login/>
+                        <Login />
                     </Route>
                 </Switch>
             </Router>

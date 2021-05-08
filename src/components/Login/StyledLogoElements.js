@@ -1,27 +1,6 @@
 import styled from 'styled-components';
 
-const Login = () => {
-    return (
-        <Container>
-            <Content>
-                <CTA>
-                    <CTALogoOne src="/images/cta-logo-one.svg" />
-                    <SignUp>GET ALL THERE</SignUp>
-                    <Description>
-                        Get Premier Access to Raya and the Last Dragon for an
-                        additional fee with a Disney+ subscription. As of
-                        05/07/21, the price of Disney+ and The Disney Bundle
-                        will increase by $3.
-                    </Description>
-                    <CTALogoTwo src="/images/cta-logo-two.png" />
-                </CTA>
-                <BgImage />
-            </Content>
-        </Container>
-    );
-}
-
-const Container = styled.section`
+export const Container = styled.section`
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -29,7 +8,7 @@ const Container = styled.section`
     height: 100vh;
 `;
 
-const Content = styled.div`
+export const Content = styled.div`
     margin-bottom: 10vw;
     width: 100%;
     position: relative;
@@ -41,9 +20,9 @@ const Content = styled.div`
     flex-direction: column;
     padding: 80px 40px;
     height: 100%;
-`
+`;
 
-const BgImage = styled.div`
+export const BgImage = styled.div`
     height: 100%;
     background-position: top;
     background-size: cover;
@@ -55,7 +34,7 @@ const BgImage = styled.div`
     left: 0;
     z-index: -1;
 `;
-const CTA = styled.div`
+export const CTA = styled.div`
     margin-bottom: 2vw;
     max-width: 650px;
     flex-wrap: wrap;
@@ -71,7 +50,7 @@ const CTA = styled.div`
     width: 100%;
 `;
 
-const CTALogoOne = styled.img`
+export const CTALogoOne = styled.img`
     margin-bottom: 12px;
     max-width: 600px;
     min-height: 1px;
@@ -79,7 +58,7 @@ const CTALogoOne = styled.img`
     width: 100%;
 `;
 
-const SignUp = styled.a`
+export const SignUp = styled.a`
     font-weight: bold;
     color: #f9f9f9;
     background-color: #0063e5;
@@ -96,7 +75,7 @@ const SignUp = styled.a`
     }
 `;
 
-const Description = styled.p`
+export const Description = styled.p`
     color: hsla(0, 0%, 95.3%, 1);
     font-size: 11px;
     margin: 0 0 24px;
@@ -104,12 +83,10 @@ const Description = styled.p`
     letter-spacing: 1.5px;
 `;
 
-const CTALogoTwo = styled.img`
+export const CTALogoTwo = styled.img`
     max-width: 600px;
     margin-bottom: 20px;
     display: inline-block;
     vertical-align: bottom;
     width: 100%;
 `;
-
-export default Login;
