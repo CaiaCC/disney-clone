@@ -45,6 +45,7 @@ export const NavMenu = styled.div`
         display: flex;
         align-items: center;
         padding: 0 12px;
+        cursor: pointer;
 
         img {
             height: 20px;
@@ -104,6 +105,7 @@ export const Login = styled.a`
     border: 1px solid #f9f9f9;
     border-radius: 4px;
     transition: all 0.2s ease 0s;
+    cursor: pointer;
 
     &:hover {
         background-color: #f9f9f9;
