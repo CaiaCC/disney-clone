@@ -1,12 +1,14 @@
 import React from 'react';
 import ImgSlider from './ImgSlider';
-import { Container } from './StyledHomeElements';
+import { HomeContainer } from "./StyledHomeElements";
+import Viewers from './Viewers';
 
 const HOME = () => {
     return (
-        <Container>
+        <HomeContainer>
             <ImgSlider />
-        </Container>
+            <Viewers />
+        </HomeContainer>
     )
 }
 
