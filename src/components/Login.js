@@ -5,14 +5,20 @@ const Login = () => {
         <Container>
             <Content>
                 <CTA>
-                    <CTALogoOne src="/images/cta-logo-one.svg"/>
+                    <CTALogoOne src="/images/cta-logo-one.svg" />
                     <SignUp>GET ALL THERE</SignUp>
-                    <Description>Get Premier Access to Raya and the Last Dragon for an additional fee with a Disney+ subscription. As of 05/07/21, the price of Disney+ and The Disney Bundle will increase by $3.</Description>
+                    <Description>
+                        Get Premier Access to Raya and the Last Dragon for an
+                        additional fee with a Disney+ subscription. As of
+                        05/07/21, the price of Disney+ and The Disney Bundle
+                        will increase by $3.
+                    </Description>
+                    <CTALogoTwo src="/images/cta-logo-two.png" />
                 </CTA>
                 <BgImage />
             </Content>
         </Container>
-    )
+    );
 }
 
 const Container = styled.section`
@@ -96,6 +102,14 @@ const Description = styled.p`
     margin: 0 0 24px;
     line-height: 1.5;
     letter-spacing: 1.5px;
+`;
+
+const CTALogoTwo = styled.img`
+    max-width: 600px;
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
 `;
 
 export default Login;
