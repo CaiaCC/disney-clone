@@ -6,9 +6,18 @@ import {
     selectUserName,
     selectUserPhoto,
     setUserLoginDetails,
+    setSignOutState,
 } from "../../features/user/userSlice";
 
-import { Login, Logo, Nav, NavMenu, UserImg } from './StyledHeaderElement';
+import {
+    Login,
+    Logo,
+    Nav,
+    NavMenu,
+    UserImg,
+    SignOut,
+    DropDown,
+} from "./StyledHeaderElement";
 
 const Header = () => {
     const dispatch = useDispatch();
@@ -26,14 +35,26 @@ const Header = () => {
     },[userName])
 
     const handleAuth = () => {
-        auth
-            .signInWithPopup(provider)
-            .then(result => {
-                setUser(result.user);
-            })
-            .catch(error => {
-                alert(error.message);
-            })
+        if(!userName) {
+            auth
+                .signInWithPopup(provider)
+                .then(result => {
+                    setUser(result.user);
+                })
+                .catch(error => {
+                    alert(error.message);
+                })
+        } else if (userName) {
+            auth
+                .signOut()
+                .then(() => {
+                    dispatch(setSignOutState());
+                    history.push("/");
+                })
+                .catch((error) => {
+                    alert(error.message);
+                });
+        }
     };
 
     const setUser = (user) => {
@@ -74,16 +95,25 @@ const Header = () => {
                         <a>
                             <img
                                 src="/images/original-icon.svg"
-                                alt="ORIGINAL"
+                                alt="ORIGINALS"
                             />
-                            <span>ORIGINAL</span>
+                            <span>ORIGINALS</span>
                         </a>
                         <a>
                             <img src="/images/movie-icon.svg" alt="MOVIE" />
                             <span>MOVIE</span>
                         </a>
+                        <a>
+                            <img src="/images/series-icon.svg" alt="SERIES" />
+                            <span>SERIES</span>
+                        </a>
                     </NavMenu>
-                    <UserImg src={userPhoto} alt={userName} />
+                    <SignOut>
+                        <UserImg src={userPhoto} alt={userName} />
+                        <DropDown>
+                            <span onClick={handleAuth}>Sign out</span>
+                        </DropDown>
+                    </SignOut>
                 </>
             )}
         </Nav>
