@@ -1,13 +1,15 @@
 import React from 'react';
-import ImgSlider from '../ImgSlider';
-import Viewers from '../Viewers';
 import { Container } from "./StyledHomeElements";
+import ImgSlider from '../ImgSlider';
+import Recommends from '../Recommends';
+import Viewers from '../Viewers';
 
 const HOME = () => {
     return (
         <Container>
             <ImgSlider />
             <Viewers />
+            <Recommends />
         </Container>
     )
 }
