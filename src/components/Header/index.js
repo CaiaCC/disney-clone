@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo, Nav, NavMenu } from './StyledHeaderElement';
+import { Login, Logo, Nav, NavMenu } from './StyledHeaderElement';
 
 const Header = () => {
     return (
@@ -29,6 +29,7 @@ const Header = () => {
                     <span>MOVIE</span>
                 </a>
             </NavMenu>
+            <Login>Login</Login>
         </Nav>
     );
 }
