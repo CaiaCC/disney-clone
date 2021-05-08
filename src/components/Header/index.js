@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { auth, provider } from '../../firebase';
@@ -10,11 +10,20 @@ import {
 
 import { Login, Logo, Nav, NavMenu, UserImg } from './StyledHeaderElement';
 
-const Header = (props) => {
+const Header = () => {
     const dispatch = useDispatch();
     const history = useHistory();
     const userName = useSelector(selectUserName);
     const userPhoto = useSelector(selectUserPhoto);
+
+    useEffect(() => {
+        auth.onAuthStateChanged(async (user) => {
+            if(user) {
+                setUser(user);
+                history.push('/home');
+            }
+        })
+    },[userName])
 
     const handleAuth = () => {
         auth
@@ -81,4 +90,4 @@ const Header = (props) => {
     );
 }
 
-export default Header
+export default Header;

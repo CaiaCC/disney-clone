@@ -113,5 +113,6 @@ export const Login = styled.a`
 `
 
 export const UserImg = styled.img`
-    height: 100%;
+    height: 70%;
+    border-radius: 50px;
 `
