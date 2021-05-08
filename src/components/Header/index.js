@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo, Nav } from './StyledHeaderElement';
+import { Logo, Nav, NavMenu } from './StyledHeaderElement';
 
 const Header = () => {
     return (
@@ -7,6 +7,7 @@ const Header = () => {
             <Logo>
                 <img src ="/images/logo.svg" alt="Disney+"/>
             </Logo>
+            <NavMenu>menu</NavMenu>
         </Nav>
     )
 }
