@@ -1,10 +1,10 @@
 import React from 'react'
-import { ViewersContainer, ViewersWrap } from './StyledHomeElements';
+import { Container, Wrap } from './StyledViewersElements';
 
 const Viewers = () => {
     return (
-        <ViewersContainer>
-            <ViewersWrap>
+        <Container>
+            <Wrap>
                 <img src="/images/viewers-disney.png" alt="" />
                 <video autoPlay={true} loop={true} playsInline={true}>
                     <source
@@ -12,8 +12,8 @@ const Viewers = () => {
                         type="video/mp4"
                     />
                 </video>
-            </ViewersWrap>
-            <ViewersWrap>
+            </Wrap>
+            <Wrap>
                 <img src="/images/viewers-pixar.png" alt="" />
                 <video autoPlay={true} loop={true} playsInline={true}>
                     <source
@@ -21,8 +21,8 @@ const Viewers = () => {
                         type="video/mp4"
                     />
                 </video>
-            </ViewersWrap>
-            <ViewersWrap>
+            </Wrap>
+            <Wrap>
                 <img src="/images/viewers-marvel.png" alt="" />
                 <video autoPlay={true} loop={true} playsInline={true}>
                     <source
@@ -30,8 +30,8 @@ const Viewers = () => {
                         type="video/mp4"
                     />
                 </video>
-            </ViewersWrap>
-            <ViewersWrap>
+            </Wrap>
+            <Wrap>
                 <img src="/images/viewers-starwars.png" alt="" />
                 <video autoPlay={true} loop={true} playsInline={true}>
                     <source
@@ -39,8 +39,8 @@ const Viewers = () => {
                         type="video/mp4"
                     />
                 </video>
-            </ViewersWrap>
-            <ViewersWrap>
+            </Wrap>
+            <Wrap>
                 <img src="/images/viewers-national.png" alt="" />
                 <video autoPlay={true} loop={true} playsInline={true}>
                     <source
@@ -48,8 +48,8 @@ const Viewers = () => {
                         type="video/mp4"
                     />
                 </video>
-            </ViewersWrap>
-        </ViewersContainer>
+            </Wrap>
+        </Container>
     );
 }
 

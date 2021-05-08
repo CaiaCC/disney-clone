@@ -2,7 +2,7 @@ import React from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import { Carousel, ImgSliderWrap } from './StyledHomeElements';
+import { Carousel, Wrap } from "./StyledImgSliderElements";
 
 const ImgSlider = () => {
     let settings = {
@@ -16,26 +16,26 @@ const ImgSlider = () => {
 
     return (
         <Carousel {...settings}>
-            <ImgSliderWrap>
+            <Wrap>
                 <a>
                     <img src="/images/slider-badging.jpeg" alt="" />
                 </a>
-            </ImgSliderWrap>
-            <ImgSliderWrap>
+            </Wrap>
+            <Wrap>
                 <a>
                     <img src="/images/slider-scale.jpeg" alt="" />
                 </a>
-            </ImgSliderWrap>
-            <ImgSliderWrap>
+            </Wrap>
+            <Wrap>
                 <a>
                     <img src="/images/slider-badag.jpeg" alt="" />
                 </a>
-            </ImgSliderWrap>
-            <ImgSliderWrap>
+            </Wrap>
+            <Wrap>
                 <a>
                     <img src="/images/slider-scales.jpeg" alt="" />
                 </a>
-            </ImgSliderWrap>
+            </Wrap>
         </Carousel>
     );
 }
