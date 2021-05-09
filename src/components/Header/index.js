@@ -69,7 +69,7 @@ const Header = () => {
 
     return (
         <Nav>
-            <Logo>
+            <Logo href="/home">
                 <img src="/images/logo.svg" alt="Disney+" />
             </Logo>
             {!userName ? (
