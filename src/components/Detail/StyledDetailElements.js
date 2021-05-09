@@ -150,3 +150,27 @@ export const GroupWatch = styled.div`
         width: 100%;
     }
 `;
+
+export const SubTitle = styled.div`
+    color: rgb(249, 249,249);
+    font-size: 15px;
+    min-height: 20px;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+`
+
+export const Description = styled.div`
+    line-height: 1.4;
+    color: rgb(249, 249, 249);
+    font-size: 20px;
+    padding: 16px 0;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+`;
+
+
+

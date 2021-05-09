@@ -1,5 +1,5 @@
 import React from 'react';
-import { AddList, Background, Container, ContentMeta, Controls, GroupWatch, ImageTitle, Player, Trailer } from './StyledDetailElements';
+import { AddList, Background, Container, ContentMeta, Controls, Description, GroupWatch, ImageTitle, Player, SubTitle, Trailer } from './StyledDetailElements';
 
 const Detail = () => {
     return (
@@ -29,6 +29,12 @@ const Detail = () => {
                             <img src='/images/group-icon.png' alt='' />
                         </div>
                     </GroupWatch>
+                    <SubTitle>
+
+                    </SubTitle>
+                    <Description>
+                        
+                    </Description>
                 </Controls>
             </ContentMeta>
         </Container>
