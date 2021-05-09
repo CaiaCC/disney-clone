@@ -5,7 +5,7 @@ import { Container, Content, Wrap } from "./StyledNewDisneyElements";
 const Originals = () => {
     return (
         <Container>
-            <h4>New to Disney</h4>
+            <h4>New to Disney+</h4>
             <Content>
                 <Wrap>
                     <Link to="/">
