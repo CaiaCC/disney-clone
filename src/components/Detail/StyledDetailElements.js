@@ -44,3 +44,51 @@ export const ImageTitle = styled.div`
         width: 35vw;
     }
 `
+
+export const ContentMeta = styled.div`
+    max-width: 874px;
+`
+
+export const Controls = styled.div`
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 24px 0px;
+    min-height: 56px;
+`
+export const Player = styled.button`
+    font-size: 15px;
+    margin: 0 22px 0 0;
+    padding: 24px;
+    height: 56px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.8px;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgb(249, 249, 249);
+    border: none;
+    color: rgb(0, 0, 0);
+
+    img {
+        width: 32px;
+    }
+
+    &:hover {
+        background: rgb(198, 198, 198);
+    }
+
+    @media (max-width: 768px) {
+        height: 45px;
+        padding: 0 12px;
+        font-size: 12px;
+        margin: 0 10px 0 0;
+
+        img {
+            width: 25px;
+        }
+    }
+`
