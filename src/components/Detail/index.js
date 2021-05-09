@@ -1,5 +1,5 @@
 import React from 'react';
-import { Background, Container, ContentMeta, Controls, ImageTitle, Player } from './StyledDetailElements';
+import { Background, Container, ContentMeta, Controls, ImageTitle, Player, Trailer } from './StyledDetailElements';
 
 const Detail = () => {
     return (
@@ -16,6 +16,10 @@ const Detail = () => {
                         <img src='/images/play-icon-black.png' alt="" />
                         <span>Play</span>
                     </Player>
+                    <Trailer>
+                        <img src='/images/play-icon-white.png' alt="" />
+                        <span>Trailer</span>
+                    </Trailer>
                 </Controls>
             </ContentMeta>
         </Container>
