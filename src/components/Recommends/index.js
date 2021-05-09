@@ -21,7 +21,8 @@ const Recommends = () => {
                                 <img src={movie.cardImg} alt={movie.title}/>
                             </Link>
                         </Wrap>
-                    ))}
+                    ))
+                }
             </Content>
         </Container>
     )
