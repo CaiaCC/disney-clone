@@ -12,9 +12,10 @@ You can visit the project [Here](https://disney-plus-clone-c00df.web.app/home).
 ![Demo](https://github.com/CaiaCC/disney-plus-clone/blob/master/docs/disney-plus-clone-demo-3.gif?raw=true)
 
 ## Tech Stacks
+* Firebase
 * React
 * Redux
-* Firebase
+* Styled components
 
 ### Credit
 [Clever Programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ)
