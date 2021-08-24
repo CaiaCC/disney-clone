@@ -2,7 +2,7 @@
 
 This project is built with React and Redux, and deployed with Firebase.
 
-You can visit the project [Here](https://disney-plus-clone-c00df.web.app/home).
+You can visit the project [Here](https://disney-plus-clone-c00df.web.app).
 
 
 ## Project Demo
